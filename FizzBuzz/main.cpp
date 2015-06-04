@@ -6,10 +6,24 @@
 //  Copyright (c) 2015 Arsalan Vakili. All rights reserved.
 //
 
-#include <iostream>
+#include<stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(){
+    for (int num= 1; num< 101; num++){
+        if (num % 3 == 0 && num % 5 == 0)
+        {
+            printf("FizzBuzz \n");
+        }
+        else if (num % 3 == 0)
+        {
+            printf("Fizz\n");
+        }
+        else if (num % 5 ==0)
+        {
+            printf("Buzz\n");
+            
+        }
+        else
+            printf("%d\n",num);
+    }
 }
